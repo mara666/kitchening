@@ -21,6 +21,7 @@ img.logo{
 }
 
 header a span.fa{
+    background-color: gray;
     display: inline-block;
     font-size: 50px;
     padding: 20px;
@@ -51,12 +52,10 @@ header nav ul li{
     padding: 10px;
     margin-bottom: 2px;
     text-transform: uppercase;
-
 }
 
 header nav ul li a{
     color: white;
-
 }
 
 header nav:hover ul{
@@ -107,25 +106,20 @@ article.product{
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     
     header nav a.toggle-nav {
         display: none;
     }
 
     header nav ul{
-        display: block;
-        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     header nav ul li{
-        float: left;
         width: 12.5%;
-        margin-right: 5%;
-    }
-
-    header nav ul li:last-child{
-        margin-right: 0;
     }
 
     section.banner{
@@ -134,20 +128,21 @@ article.product{
 
     section.banner img{
         width: 100%;
+        margin-bottom: 10px;
     }
 
     article.product{
-        float: left;
         width: 30%;
-        margin-right: 5%; 
-    }
-
-    article.product:nth-child(3n){
-        margin-right: 0;
     }
 
     section.vip-products{
-        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
+    div.container{
+        width: 90%;
+        margin: 0 auto;
+    }
   }
