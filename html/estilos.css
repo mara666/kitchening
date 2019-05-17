@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+section.banner{
+    display: none;
+}
+
+body{
+    background-image: url("images/bg-body.png");
+    font-family: sans-serif;
+}
+
+img.logo{
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 0 auto;
+    width: 150px;
+    display: block;
+    margin-top: 25px;
+}
+
+header a span.fa{
+    display: inline-block;
+    font-size: 50px;
+    padding: 20px;
+    color: white;
+    margin: 0 auto;
+    width: 84px;
+    display: block;
+    margin-top: 15px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: none;
+}
+
+header nav ul li{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+
+}
+
+header nav ul li a{
+    color: white;
+
+}
+
+header nav:hover ul{
+    display: block;
+}
+
+img.photo{
+    width: 100%;
+}
+
+img.special{
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 20px;
+}
+
+div.photo-container{
+    position: relative;
+}
+
+a.zoom{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+article.product p{
+    color: gray;
+}
+
+a.more{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+article.product{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    header nav a.toggle-nav {
+        display: none;
+    }
+
+    header nav ul{
+        display: block;
+        overflow: hidden;
+    }
+
+    header nav ul li{
+        float: left;
+        width: 12.5%;
+        margin-right: 5%;
+    }
+
+    header nav ul li:last-child{
+        margin-right: 0;
+    }
+
+    section.banner{
+        display: block;
+    }
+
+    section.banner img{
+        width: 100%;
+    }
+
+    article.product{
+        float: left;
+        width: 30%;
+        margin-right: 5%; 
+    }
+
+    article.product:nth-child(3n){
+        margin-right: 0;
+    }
+
+    section.vip-products{
+        overflow: hidden;
+    }
+
+  }
