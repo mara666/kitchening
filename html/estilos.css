@@ -106,6 +106,38 @@ article.product{
     margin-bottom: 20px;
 }
 
+footer.main-footer{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer ul li{
+    width: 12.5%;
+    list-style-type: none;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+footer ul li a{
+   text-decoration: none;
+   color: white;
+   text-transform: capitalize;
+   border-right: 1px solid white;
+   margin-right: 0px;
+}
+
+
+
+
 @media only screen and (min-width: 768px) {
     
     header nav a.toggle-nav {
